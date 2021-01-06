@@ -1,0 +1,19 @@
+# Mysql数据库
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://134.175.89.74:3306/guns-separation?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: root
+    password: ailaopo1314
+    # 连接池大小根据实际情况调整
+    max-active: 20
+    max-pool-prepared-statement-per-connection-size: 20
+  redis:
+    host: 134.175.89.74
+    password: mw2TuNl3HDbtP819
+    lettuce:
+      pool:
+        maxActive: 100
+        maxWait: 6000
+        maxIdle: 10
+        minIdle: 5
